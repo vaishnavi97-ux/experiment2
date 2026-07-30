@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:linear-gradient(to right,#74ebd5,#ACB6E5);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+
+    .container{
+        width:400px;
+        background:#fff;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 0 15px rgba(0,0,0,0.2);
+    }
+
+    h2{
+        text-align:center;
+        margin-bottom:20px;
+        color:#333;
+    }
+
+    label{
+        display:block;
+        margin-top:12px;
+        margin-bottom:5px;
+        font-weight:bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select{
+        width:100%;
+        padding:10px;
+        border:1px solid #ccc;
+        border-radius:5px;
+        outline:none;
+    }
+
+    input:focus,
+    select:focus{
+        border-color:#007BFF;
+    }
+
+    .gender{
+        margin-top:5px;
+    }
+
+    .gender label{
+        display:inline;
+        font-weight:normal;
+        margin-right:15px;
+    }
+
+    .buttons{
+        margin-top:20px;
+        display:flex;
+        justify-content:space-between;
+    }
+
+    button{
+        width:48%;
+        padding:10px;
+        border:none;
+        border-radius:5px;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+    }
+
+    .submit{
+        background:#28a745;
+    }
+
+    .submit:hover{
+        background:#218838;
+    }
+
+    .reset{
+        background:#dc3545;
+    }
+
+    .reset:hover{
+        background:#c82333;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+        </div>
+
+        <label>Branch</label>
+        <select required>
+            <option value="">--Select Branch--</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+            <option>AI & DS</option>
+        </select>
+
+        <label>Father's Name</label>
+        <input type="text" placeholder="Enter father's name">
+
+        <label>Mother's Name</label>
+        <input type="text" placeholder="Enter mother's name">
+
+        <div class="buttons">
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+        </div>
+
+    </form>
+</div>
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let firstName = document.getElementById("firstName").value.trim();
+    let lastName = document.getElementById("lastName").value.trim();
+    let fatherName = document.getElementById("fatherName").value.trim();
+    let motherName = document.getElementById("motherName").value.trim();
+    let dob = document.getElementById("dob").value;
+    let education = document.getElementById("education").value.trim();
+    let gender = document.querySelector('input[name="gender"]:checked');
+
+    if (firstName === "") {
+        alert("Please enter First Name");
+        return;
+    }
+
+    if (lastName === "") {
+        alert("Please enter Last Name");
+        return;
+    }
+
+    if (fatherName === "") {
+        alert("Please enter Father's Name");
+        return;
+    }
+
+    if (motherName === "") {
+        alert("Please enter Mother's Name");
+        return;
+    }
+
+    if (dob === "") {
+        alert("Please select Date of Birth");
+        return;
+    }
+
+    if (gender === null) {
+        alert("Please select Gender");
+        return;
+    }
+
+    if (education === "") {
+        alert("Please enter Education Details");
+        return;
+    }
+
+    alert("Form Submitted Successfully!");
+    document.getElementById("registrationForm").reset();
+});
+</script>
+
+</body>
+</html>
