@@ -1,4 +1,4 @@
-# Hi there! 👋 I'm Sujatha
+# Hi there! 👋 I'm M Vaishnavi
 
 ### 🎓 Computer Science Student | 💻 Learning to Code | 🚀 Future Software Developer
 
