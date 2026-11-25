@@ -6,17 +6,6 @@ Welcome to my GitHub profile! I'm a student who enjoys learning new technologies
 
 ---
 
-## 👩‍🎓 About Me
-
-- 🎓 Computer Science Student
-- 🌱 Currently learning **C** and **Java**
-- 💡 Interested in Software Development and Web Technologies
-- 📚 Always exploring new programming concepts
-- 🎯 Goal: Become a skilled Software Engineer
-- 🤝 Open to learning, collaboration, and new opportunities
-
----
-
 ## 💻 Skills
 
 ### Programming Languages
