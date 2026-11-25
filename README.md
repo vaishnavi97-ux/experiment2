@@ -70,4 +70,3 @@ Welcome to my GitHub profile! I'm a student who enjoys learning new technologies
 ---
 
 ⭐ Thanks for visiting my profile!
-Let's learn, build, and grow together! 🚀
