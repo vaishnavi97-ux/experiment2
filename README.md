@@ -6,19 +6,6 @@ Welcome to my GitHub profile! I'm a student who enjoys learning new technologies
 
 ---
 
-## 💻 Skills
-
-### Programming Languages
-- C
-- Java
-
-### Tools
-- Git
-- GitHub
-- VS Code
-
----
-
 ## 📖 Currently Learning
 
 - Data Structures & Algorithms
