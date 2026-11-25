@@ -15,15 +15,6 @@ Welcome to my GitHub profile! I'm a student who enjoys learning new technologies
 
 ---
 
-## 🎯 My Goals
-
-- ✅ Improve my programming skills
-- ✅ Build useful projects
-- ✅ Contribute to open-source projects
-- ✅ Learn new technologies
-- ✅ Grow as a software developer
-
----
 
 ## 📊 GitHub Stats
 
